@@ -15,9 +15,10 @@ Com os novos Cientista de Dados no time, a proposta para solução desse problem
 
 # 2. Premissas
 Para conseguir mensurar o impacto financeiro da adoção do modelo Machine Learning, foi estimado alguns valores fictícios como:
-1. Custo salarial do time de Suporte a Vendas
-2. Custo da ligação para clientes
-3. Lucro por seguro de vida vendido
+1. Custo da ligação para clientes
+2. Lucro por seguro de vida vendido
+3. Total de Clientes
+4. % de Clientes Compradores   
 
 # 3. Produto Final
 O produto final será um Google Sheets onde será preenchido os dados do clientes e retornará o respectivo score do cliente.
@@ -52,7 +53,7 @@ Para agregar na explicabilidade do problema, iremos usar a Curva Lift, que indic
   
 # 6. Modelo Final e Performance
 
-Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient Boosting Classifier, cujo Recall foi de 93.04%, em outras palavras, 93% dos compradores estavam entre os 40% clientes com maior score. A curva Lift teve um valor de 2.33, indicando que enquanto um modelo aleatório teria identificado 1 cliente comprados, o nosso modelo de ML teria indicado 2.33 clientes.
+Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient Boosting Classifier, cujo Recall foi de 93.04%, em outras palavras, 93% dos compradores estavam entre os 40% clientes com maior score. A curva Lift teve um valor de 2.33, indicando que enquanto um modelo aleatório teria identificado 1 cliente comprados, o nosso modelo de ML teria indicado 2.33 clientes. Abaixo podemos ver graficamente ambas as métricas.
 
 ## 6.1. Recall at 40% - Gradient Boosting Classifier
 ![This is an image](https://imgur.com/AugqyLw.png)
@@ -61,8 +62,20 @@ Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient
 ![This is an image](https://i.imgur.com/bD3NSI8.png)
 
 # 7. Resultado de Negócios
+Quais são os benefícios para a empresa adotar o modelo de machine learning para atribuir scores aos clientes? Para isso, devemos traduzir o desempenho do modelo para o idioma dos negócios, que é dinheiro. Ou seja, qual é meu lucro esperado sem o modelo? E com o modelo? Para isso, iremos adotar as seguintes premissas:
 
+| Premissa | Valor | 
+| ------ | ------ |
+| Base Clientes | 1000 |
+| % Compradores | 10% |
+| Compradores | 100 |
 
+# 7.1. Cenário Baseline - Sem Machine Learning
+
+| Entrada / Saída | Quantidade | Valor Unitário | Valor Total | 
+| ------ | ------ | ------ | ------ |
+| Custo Ligação | 400 | -5 | -2000 |  
+| Lucro por Venda | 40 | 2000 | 80000 | 
 
 # 8. Entregando o Produto Final
 
