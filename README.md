@@ -66,16 +66,37 @@ Quais são os benefícios para a empresa adotar o modelo de machine learning par
 
 | Premissa | Valor | 
 | ------ | ------ |
-| Base Clientes | 1000 |
+| Base Clientes | 1.000 |
 | % Compradores | 10% |
 | Compradores | 100 |
+| Custo Cloud | R$ 1.000 |
+| Salário Cientista de Dados | R$ 7.000 |
 
-# 7.1. Cenário Baseline - Sem Machine Learning
+## 7.1. Cenário Baseline - Sem Machine Learning
 
-| Entrada / Saída | Quantidade | Valor Unitário | Valor Total | 
+O cenário Baseline é aquele onde não se implementa um modelo de Machine Learning, e as chamadas para os clientes continuam de maneira aleatória. Assim, considerando que a empresa pode contatar 40% de sua base, é previsto que 40% dos compradores sejam alcançados. Em nosso exemplo, se há 100 compradores, espera-se que 40 deles sejam contatados. Logo, nesse cenário o lucro total seja de R$78.000. Podemos ver o resumo dos custos e faturamento abaixo:
+
+| Entrada / Saída | Quantidade | Valor Unitário (R$) | Valor Total (R$) | 
 | ------ | ------ | ------ | ------ |
-| Custo Ligação | 400 | -5 | -2000 |  
-| Lucro por Venda | 40 | 2000 | 80000 | 
+| Custo Ligação | 400 | -5 | -2.000 |  
+| Lucro por Venda | 40 | 2000 | 80.000 | 
+|  | | <b> Lucro Total </b> | <b> 78.000 </b> | 
+
+## 7.2. Cenário Aplicando Machine Learning
+
+Nesse cenário a empresa ira adotar o modelo de Machine Learning para atribuir os scores aos clientes e ligar para os 40% mais propensos. Além disso, nesse cenário temos a adição de 2 Cientista de Dados no time e o custo de hospedagem da cloud que devem ser contabilizados ao comparar o desempenho financeiro em relação ao baseline. Podemos ver o resumo dos custos e faturamento abaixo:
+
+| Entrada / Saída | Quantidade | Valor Unitário (R$) | Valor Total (R$) | 
+| ------ | ------ | ------ | ------ |
+| Custo Ligação | 400 | -5 | -2.000 |  
+| Lucro por Venda | 93 | 2.000 | 196.000 | 
+| Custo Salarial Cientista de Dados | 2 | -7.000 | -14.000 | 
+| Custo da Cloud para hospedar modelo | 1 | -1.000 | 1.000 | 
+|  | | <b> Lucro Total </b> | <b> 169.000 </b> | 
+
+## 7.3. Resultado Final
+
+A empresa ao adotar o modelo de Machine Learning, passará de um cenário de faturamento mensal de R$78.000 para R$169.000, um aumento de aproximadamente 117% no lucro, ou seja, mais que o dobro! É evidente os benefícios financeiros para a empresa ao adotar o uso de Machine Learning para decisões mais assertivas.
 
 # 8. Entregando o Produto Final
 
