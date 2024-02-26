@@ -20,10 +20,51 @@ Para conseguir mensurar o impacto financeiro da adoção do modelo Machine Learn
 3. Lucro por seguro de vida vendido
 
 # 3. Produto Final
-O produto final será um Google Sheets onde será preenchido os dados do clientes e retornará o respectivo score do cliente
+O produto final será um Google Sheets onde será preenchido os dados do clientes e retornará o respectivo score do cliente.
 
 # 4. Estratégia da Solução
-# 5. Modelos de Machine Learning
+
+![This is an image](https://miro.medium.com/v2/resize:fit:640/0*tA5OjppLK627FfFo)
+
+A solução seguirá as etapas do framework CRISP-DM, que é composta por seis fases sequenciais e de modo ciclico: 
+  1. Entendimento do problema de negócios
+  2. Entendimento dos dados disponíveis
+  3. Preparação dos dados
+  4. Modelagem de dados
+  5. Avaliação do modelo
+  6. Deploy do modelo
+
+Para a seleção do modelo de machine learning mais adequado, priorizaremos a métrica de Recall. Nosso principal objetivo é maximizar a identificação dos casos positivos, ou seja, dos potenciais compradores. No entanto, considerando o contexto de negócio, sobre a redução do quadro de funcionários para 40% e os contatos com os potenciais compradores são realizados por meio de chamadas telefônicas, limitando o alcance da equipe de Suporte a Vendas a apenas 40% da base, avaliaremos o Recall com base nos 40% dos clientes mais propensos. Esses 40% serão definidos como os clientes com os maiores scores atribuídos pelo modelo de machine learning. Durante a construção do modelo, referiremos a essa métrica como recall_at_k, sendo K=40%.
+Para agregar na explicabilidade do problema, iremos usar a Curva Lift, que indica quantas vezes melhor o modelo está performando em relação a um modelo aleatório, que é exatamente a atual estratégia da empresa, onde são feitas ligações de modo aleatório para sua base de clientes oferecendo os produtos.
+
+# 5. Desempenho dos Modelos de Machine Learning
+
+  No primeiro ciclo do CRISP foi testado 4 algoritmos com o objetivo de encontrar o modelo com a melhor performance. Usou-se como Baseline o cenário atual, que é um cenário sem Machine Learning, onde as ligações são aleatórias, portanto se 40% dos clientes forem contactados, é esperado que dessa lista, 40% sejam compradores.
+  Após os testes foram obtidos os seguintes resultados para cada modelo:
+  
+  | Modelo | Recall at 40% | Curva Lift | 
+  | ------ | ------ | ------ | 
+  | Gradient Boosting Classifier |93.04%|2.33|
+  | XGBoost Classifier	 |92.95%|2.32|
+  | Linear Regression	 |91.83%|2.29|
+  | K-Nearest Neighbors |91.71%|2.27|
+  | Baseline - Cenário Atual: Sem ML |40.00%|1|
+  
 # 6. Modelo Final e Performance
+
+Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient Boosting Classifier, cujo Recall foi de 93.04%, em outras palavras, 93% dos compradores estavam entre os 40% clientes com maior score. A curva Lift teve um valor de 2.33, indicando que enquanto um modelo aleatório teria identificado 1 cliente comprados, o nosso modelo de ML teria indicado 2.33 clientes.
+
+## 6.1. Recall at 40% - Gradient Boosting Classifier
+![This is an image](https://imgur.com/AugqyLw.png)
+
+## 6.2. Curva Lift - Gradient Boosting Classifier
+![This is an image](https://i.imgur.com/bD3NSI8.png)
+
 # 7. Resultado de Negócios
+
+
+
 # 8. Entregando o Produto Final
+
+
+
