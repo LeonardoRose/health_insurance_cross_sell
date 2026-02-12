@@ -1,4 +1,4 @@
-<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/b5607b8d-1e68-4dc9-9d9c-283ddcf4d777" /># Projeto: Health Insurance CrossSell
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/836e207b-bbfe-4646-a66a-0ef229754d6d" /><img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/b5607b8d-1e68-4dc9-9d9c-283ddcf4d777" /># Projeto: Health Insurance CrossSell
 Este repositório contém todos os arquivos do projeto Health Insurance CrossSell, onde foi realizado a previsão da propensão de compra de cada clientes através de algoritmos de classificação.
 
 # 1. Problema de Negócio
@@ -56,11 +56,10 @@ Para agregar na explicabilidade do problema, iremos usar a Curva Lift, que indic
 Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient Boosting Classifier, cujo Recall foi de 93.04%, em outras palavras, 93% dos compradores estavam entre os 40% clientes com maior score. A curva Lift teve um valor de 2.33, indicando que enquanto um modelo aleatório teria identificado 1 cliente comprados, o nosso modelo de ML teria indicado 2.33 clientes. Abaixo podemos ver graficamente ambas as métricas.
 
 ## 6.1. Recall at 40% - Gradient Boosting Classifier
-![This is an image](https://imgur.com/AugqyLw.png)
+![This is an image](https://i.imgur.com/lh63C7H.png)
+
 
 ## 6.2. Curva Lift - Gradient Boosting Classifier
-![This is an image](https://i.imgur.com/bD3NSI8.png)
-
 ![This is an image](https://i.imgur.com/nvPAN2n.png)
 
 # 7. Resultado de Negócios
