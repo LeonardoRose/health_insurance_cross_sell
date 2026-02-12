@@ -98,8 +98,3 @@ Nesse cenário a empresa ira adotar o modelo de Machine Learning para atribuir o
 ## 7.3. Resultado Final
 
 A empresa ao adotar o modelo de Machine Learning, passará de um cenário de faturamento mensal de R$78.000 para R$169.000, um aumento de aproximadamente 117% no lucro, ou seja, mais que o dobro! É evidente os benefícios financeiros para a empresa ao adotar o uso de Machine Learning para decisões mais assertivas.
-
-# 8. Entregando o Produto Final
-
-
-
