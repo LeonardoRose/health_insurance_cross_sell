@@ -1,4 +1,4 @@
-<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/836e207b-bbfe-4646-a66a-0ef229754d6d" /><img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/b5607b8d-1e68-4dc9-9d9c-283ddcf4d777" /># Projeto: Health Insurance CrossSell
+# Projeto: Health Insurance CrossSell
 Este repositório contém todos os arquivos do projeto Health Insurance CrossSell, onde foi realizado a previsão da propensão de compra de cada clientes através de algoritmos de classificação.
 
 # 1. Problema de Negócio
