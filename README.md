@@ -46,9 +46,9 @@ Para agregar na explicabilidade do problema, iremos usar a Curva Lift, que indic
   | Modelo | Recall at 40% | Curva Lift | 
   | ------ | ------ | ------ | 
   | Gradient Boosting Classifier |93.04%|2.33|
-  | XGBoost Classifier	 |92.95%|2.32|
-  | Linear Regression	 |91.83%|2.29|
-  | K-Nearest Neighbors |91.71%|2.27|
+  | XGBoost Classifier	 |92.74%|2.32|
+  | Linear Regression	 |91.84%|2.33|
+  | K-Nearest Neighbors |91.77%|2.29|
   | Baseline - Cenário Atual: Sem ML |40.00%|1|
   
 # 6. Modelo Final e Performance
