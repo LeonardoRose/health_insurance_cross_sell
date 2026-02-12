@@ -61,6 +61,8 @@ Avaliando a métrica Recall, o modelo que teve melhor performance foi o Gradient
 ## 6.2. Curva Lift - Gradient Boosting Classifier
 ![This is an image](https://i.imgur.com/bD3NSI8.png)
 
+![This is an image](https://imgur.com/a/kNbK6Ha)
+
 # 7. Resultado de Negócios
 Quais são os benefícios para a empresa adotar o modelo de machine learning para atribuir scores aos clientes? Para isso, devemos traduzir o desempenho do modelo para o idioma dos negócios, que é dinheiro. Ou seja, qual é meu lucro esperado sem o modelo? E com o modelo? Para isso, iremos adotar as seguintes premissas:
 
